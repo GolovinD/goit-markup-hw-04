@@ -24,6 +24,10 @@ a {
   color: var(--main-txt-color);
 }
 
+a:focus {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,14 +41,6 @@ a {
   overflow: hidden;
 }
 
-/* .link,
-.logo,
-.nav-link,
-.contact-header,
-.address-footer,
-.contack-footer {
-  text-decoration: none;
-} */
 /* Body */
 body {
   font-family: var(--main-font), sans-serif;
