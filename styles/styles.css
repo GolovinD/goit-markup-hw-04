@@ -141,8 +141,9 @@ header {
 /* Contacts */
 .contact-header {
   padding: 32px 0px;
-
   font-weight: 500;
+  display: flex;
+  align-items: center;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-txt-color);
@@ -164,8 +165,6 @@ header {
 .head-contacts {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .icon-contact {
@@ -178,6 +177,8 @@ header {
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
 
   text-align: center;
 
@@ -447,6 +448,7 @@ footer {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo.logo-footer {
@@ -483,15 +485,13 @@ footer {
 }
 
 .social-link-bloc {
-  width: 206px;
-  height: 80px;
-  margin-top: 12px;
   margin-left: 70px;
 }
 
 .social-link-title {
   margin-bottom: 20px;
 
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
@@ -499,6 +499,10 @@ footer {
 
 .social-link-list.footer {
   margin-bottom: 0;
+}
+
+.social-link-item.footer {
+  color: #ffffff;
 }
 
 .social-item.footer {
@@ -523,6 +527,11 @@ footer {
 .work-item {
   width: 370px;
   margin: 15px;
+}
+
+.work-item-link:hover,
+.work-item-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
